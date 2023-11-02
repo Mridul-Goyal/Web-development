@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="/static/event.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="/static/event.js"></script>
+	</head>
+<body>
+    <div class="frame">
+        <div class="formDiv">
+            <div class="formHeading">
+                Events Search<hr>
+            </div>
+            <form id="eventForm" onsubmit="return false">
+                <table id="form_talble">
+                    <tr>
+                        <td colspan="2">
+                            <label id="star1" class="formFields" for="keyword">Keyword </label> <br> <input class="f_longBox" type="text" name="keyword" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 313px;">
+                            <label class="formFields" for="distance">Distance(miles)</label> <br> <input id="f_distBox"type="number" name="distance" placeholder="  10">
+                        </td>
+                        <td style="width: 312px;">
+                            <label id="star2" class="formFields" for="category">Category</label> <br>
+                            <select id="f_catSelect" name="categories" value="Default">
+                                <option value="Default" selected>Default</option>
+                                <option value="Music">Music</option>
+                                <option value="Sports">Sports</option>
+                                <option value="Arts">Arts</option>
+                                <option value="Theatre">Theatre</option>
+                                <option value="Film">Film</option>
+                                <option value="Miscellaneous">Miscellaneous</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label id="star3" class="formFields" for="location">Location</label> 
+                            <input type="checkbox" id="locCheck" name="locCheck" onclick="disableLocInput()"> 
+                            <label for="locCheck" style="color: white; font-family: 'Sam Serif', sans-serif; font-size: 14px;">Auto-Detect Location</label><br>
+                            <input class="f_longBox" type="text" id="locInput" name="locInput" required>
+                        </td>
+                    </tr>
+                </table>
+                <button id="f_search" onclick="requestSearch()">SEARCH</button>
+                <button type="reset" id="f_clear" onclick="clearPage()">CLEAR</button><p>
+            </form>
+        </div>
+        <div class="searchResults" id="NoResults">No Records Found</div>
+        <table class="searchResults" id="tmResults">
+            <thead>
+                <tr>
+                    <th style="width: 155px;">Date</th>
+                    <th style="width: 155px;">Icon</th>
+                    <th class="table_hover" style="width: 610px;" onclick="sortColumn('event')">Event</th>
+                    <th class="table_hover" style="width: 130px;" onclick="sortColumn('genre')">Genre</th>
+                    <th class="table_hover" style="width: 250px;"onclick="sortColumn('venue')">Venue</th>
+                </tr>
+            </thead>
+        </table>
+        <div class="searchResults" id="eventDetails" ></div>
+        <div class="searchResults" id="venueLink" ></div>
+        <div class="searchResults" id="venueDetails" ></div>
+    </div>
+</body>
+</html>

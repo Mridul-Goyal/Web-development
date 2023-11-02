@@ -1,0 +1,408 @@
+/* body */
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(160, 88, 160) !important;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color:rgb(0, 140, 255);
+}
+
+/* frame */
+.frame {
+    width: 1400px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* form */
+.formDiv {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 700px;
+    height: 425px;
+    margin: 40px auto 40px auto;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+}
+
+#form_talble td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.formHeading {
+    color: white;
+    margin: 50px 30px 10px 30px;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 30px;
+    font-family: "Sam Serif", serif;
+}
+
+.formFields {
+    color: lightblue;
+    font-size: 16px;
+    font-family: "Sam Serif", sans-serif;
+}
+
+#eventForm {
+    margin-left: 30px;
+}
+
+.f_longBox {
+    border-radius: 8px;
+    width: 625px;
+    color: white;
+    border-width: 2px;
+    border-color: white;
+    height: 30px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Sam Serif", sans-serif;
+    font-size: 16px;
+}
+
+#f_distBox {
+    border-radius: 8px;
+    width: 200px;
+    color: white;
+    border-width: 2px;
+    border-color: white;
+    height: 30px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Sam Serif", sans-serif;
+    font-size: 16px;
+}
+
+#f_catSelect {
+    border-radius: 8px;
+    width: 310px;
+    color: white;
+    border-width: 2px;
+    border-color: white;
+    height: 30px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Sam Serif", sans-serif;
+    font-size: 16px;
+}
+
+#f_search {
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: rgb(235, 152, 0);
+    color: white;
+    height: 45px;
+    width: 100px;
+    border-radius: 8px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px solid rgb(170, 111, 3);
+    font-family: "Sam Serif", sans-serif;
+}
+
+#f_search:hover {
+    background-color: rgb(240, 209, 152);
+}
+
+#f_clear {
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px solid rgb(3, 94, 168);
+    height: 45px;
+    width: 100px;
+    border-radius: 8px;
+    font-family: "Sam Serif", sans-serif;
+}
+
+#f_clear:hover {
+    background-color: rgb(140, 195, 240);;
+}
+
+#star1::after {
+    content: "*";
+    color: red;
+    margin-left: 2px;
+}
+
+#star2::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+
+#star3::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+
+/* details table */
+.row-img {
+    width: 90px;
+    height: 45px;
+}
+
+#tmResults td{
+    border: 0.5px solid black;
+    text-align: center;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    height: 80px;
+}
+
+#tmResults th{
+    border: 0.5px solid black;
+    text-align: center;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    height: 40px;
+    box-shadow: 0 5px 0px rgba(0,0,0,0.1);
+}
+
+#tmResults {
+    border-spacing: 0ch;
+    width: 1300px;
+    margin: auto;
+    background-color: white;
+}
+
+.searchResults{
+    display: none;
+}
+
+.table_hover:hover {
+    cursor: pointer;
+}
+
+.t_hover:hover{
+    color: rgb(160, 88, 160) !important;
+    cursor: pointer;
+}
+
+/* no result*/
+#NoResults {
+    background-color: white;
+    color: red;
+    text-align: center;
+    font-size: 16px;
+    width: 1350px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+/* event details */
+#eventDetails {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    width: 1000px;
+    height: 650px;
+    margin: 40px auto 10px auto;
+    color: white;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: "Sam Serif", serif;
+}
+
+#eventName {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 25px;
+}
+
+.ev_headings {
+    color: turquoise;
+    font-size: 25px;
+}
+
+.ev_data {
+    color: white;
+    font-size: 18px;
+}
+
+#ev_table {
+    padding-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 940px;
+    height: 500px;
+}
+
+#ev_left {
+    width: 370px;
+}
+
+#ev_right {
+    width: 560px;
+    text-align: center;
+}
+
+#ev_seatmap {
+    width: 500px;
+    height: 400px;
+}
+
+#ev_ticketSt {
+    border-radius: 5px;
+    display: inline-block;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* venue link */
+#venueLink{
+    color: rgb(173, 171, 171);
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+#vl_text{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#vl_arrow{
+    margin-top: 0px;
+    padding: 0px;
+    height: 40px;
+    width: 40px;
+    border-width: 0px 2px 2px 0px;
+    border-color: gray;
+    border-style: solid;
+    transform: rotate(45deg);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#vl_arrow:hover {
+    cursor: pointer;
+    border-color: rgb(207, 206, 206);
+}
+
+/* venue details */
+#venueDetails {
+    background-color: white;
+    /* height: 400px; */
+    width: 1000px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    margin-top: 50px;
+    font-family: "Sam Serif", serif;
+}
+
+#inner_venue {
+    background-color: white;
+    width: 950px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    text-align: center;
+    padding: 25px;
+}
+
+#v_name {
+    font-size: 40px;
+    width: 900px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#v_nameText  {
+    border-bottom: 1px solid black;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Sam Serif", serif;
+}
+
+#v_add {
+    font-weight: bold;
+    vertical-align: top;
+    text-align: right;
+    font-family: "Sam Serif", serif;
+}
+
+#venue_table {
+    width: 650px;
+    text-align: left;
+    margin-left: 120px;
+    margin-right: 180px;
+    vertical-align: top;
+    height: 120px;
+    padding-top: 5px;
+    margin-top: 40px;
+}
+
+#v_google {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 100px;
+    font-family: "Sam Serif", serif;
+}
+
+#vtable_right {
+    vertical-align: top;
+    text-align: right;
+    font-family: "Sam Serif", serif;
+}
+
+#vtable_left {
+    vertical-align: top;
+    font-family: "Sam Serif", serif;
+}
+
+#vtable_line {
+    content: "";
+    border-left: 1px solid gray;
+    height: 100px; /* or whatever height you want */
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#v_image {
+    max-width: 200px !important;
+    max-height: 110px !important;
+    padding-top: 10px !important;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#v_imgTag {
+    max-width: 200px !important;
+    max-height: 110px !important;
+    object-fit: cover;
+}
